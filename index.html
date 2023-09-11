@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <meta charset="utf-8" />
+    <title>Wave Function Collapse</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color:#666666;
+      }
+
+      #container {
+        margin-top: 0px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;        
+        width: 100%;
+      }
+
+      #nav {
+        margin-top: 0px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;        
+      }
+
+      #navLeft {
+        background-color:#999999;
+        height: 589px;
+        width: 90px;
+        padding-left: 10px;
+        padding-top: 10px;
+        overflow-y: auto;
+      }
+
+      #navRight {
+        background-color:#bbbbbb;
+        height: 593px;
+        width: 110px;
+        padding-left: 10px;
+        padding-top: 6px;
+      }
+
+      .chk_tiles {
+         position: relative;
+	       cursor: pointer;
+         bottom: 14px;
+         left: 2px;
+      }
+
+      button {
+        margin-top: 10px;
+        width: 100px;
+      }
+
+      img {
+        cursor: pointer;
+        margin-top: 2px;
+        margin-left: 4px;
+        width: 40px;
+        border: 1px solid black;
+      }
+
+      .selected {
+        background-color: #999999;
+      }
+
+      button {
+        background-color: #cccccc;
+      }
+
+      input[type=number] {
+        width: 90px;
+      }
+
+      label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: small;
+      }
+
+      .slider {
+        width: 100px;
+        margin-left: 0;
+      }
+
+      hr {
+        width: 98px;
+        margin-left: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div id="container">
+        <div id="canvas-div"></div>
+        <div id="nav"></div>
+      </div>
+    </main>
+    <script src="tile_sets.js"></script>
+    <script src="tile.js"></script>
+    <script src="cell.js"></script>
+    <script src="dist/sketch.js"></script>
+  </body>
+</html>
